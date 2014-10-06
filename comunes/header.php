@@ -33,9 +33,9 @@
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
 								<li><a href="index.php" class="active">Inicio</a></li>
-								<li><a href="autos.php">Autos</a></li> 
-								<li><a href="camionetas.php">Camionetas</a></li> 
-								<li><a href="camiones.php">Camiones</a></li> 
+								<li><a href="autos.php?tag=1">Autos</a></li> 
+								<li><a href="autos.php?tag=2">Camionetas</a></li> 
+								<li><a href="autos.php?tag=3">Camiones</a></li> 
 								<li><a href="camiones.php">Estaquitas</a></li> 
 								<li><a href="camiones.php">Servicios</a></li> 
 								<li><a href="camiones.php">Quienes Somos</a></li> 
@@ -57,7 +57,7 @@
                                 </li> 
 								<li><a href="404.html">404</a></li>
  -->
-								<li><a href="contact-us.html">Contacto</a></li>
+								<li><a href="contacto.php">Contacto</a></li>
 							</ul>
 						</div>
 					</div>

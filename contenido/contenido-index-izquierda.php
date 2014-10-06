@@ -24,7 +24,8 @@
 		$sql = mysql_query("SELECT * FROM unidades WHERE tipo = 'auto' ORDER BY modelo ");
 		while ($row = mysql_fetch_array($sql)){
 ?>
-											<li><a href="auto-solo.php?n=<? echo $row['slug'] ?>"><? echo $row['marca']." ".$row['modelo']." ".$row['anio'] ?></a></li>
+											<li><a href="auto-solo.php?n=<? echo $row['slug'] ?>"><? echo $row['marca']." ".$row['modelo']." ".$row['anio'] ?></a>
+											</li>
 											
 <? } ?>
 										</ul>
@@ -74,7 +75,7 @@
 									<div class="panel-body">
 										<ul>
 											
-																						<?
+<?
 		$sql = mysql_query("SELECT * FROM unidades WHERE tipo = 'camion' ORDER BY modelo ");
 		while ($row = mysql_fetch_array($sql)){
 ?>
@@ -98,8 +99,23 @@
 					
 					
 						
-						<div class="shipping text-center"><!--shipping-->
-							<img src="images/home/shipping.jpg" alt="" />
+						<div class=" panel-heading"><!--shipping-->
+							<p>Tags:</p>
+
+						<?
+							$sql_mostrar_etiquetas = mysql_query(" SELECT * FROM etiquetas");
+							while($row = mysql_fetch_array($sql_mostrar_etiquetas)){
+
+
+							
+						?>
+
+								<p class="caps"><a href="autos.php?tag=<? echo  $row['id']; ?>"><? echo $row['nombre']; ?></a></p>
+						<?
+							 }
+						?>
+						<hr>
+							<img class="img-responsive" src="images/promociones/banner-chofer.jpg" alt="" />
 						</div><!--/shipping-->
 					
 					</div>

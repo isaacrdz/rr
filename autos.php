@@ -8,7 +8,9 @@
 	<!-- banner -->
 	<section id="advertisement">
 		<div class="container">
+		<!-- 
 			<img src="images/shop/advertisement.jpg" alt="" />
+		 -->
 		</div>
 	</section>
 	<!-- banner end -->
@@ -27,10 +29,18 @@
 					include 'contenido/contenido-producto-derecha.php';
 				}
 
+
+		elseif (isset($_GET['tag']))
+				{
+					include 'contenido/etiquetas.php';
+
+				}
+
+
+
 			else
 				{
 					include 'contenido/contenido-producto-derecha.php';
-
 				}
 
 		?>
