@@ -2,6 +2,9 @@
 			<div class="row">
 				<div class="col-sm-3">
 					<div class="left-sidebar">
+
+					<img class="img-responsive-1 border-radius" src="images/promociones/banner-chofer.jpg" alt="" /> <hr>
+
 						<h2>Autos en Rentas</h2>
 						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
 
@@ -49,7 +52,7 @@
 								<div id="mens" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<?
+<?
 		$sql = mysql_query("SELECT * FROM unidades WHERE tipo = 'camioneta' ORDER BY modelo ");
 		while ($row = mysql_fetch_array($sql)){
 ?>
@@ -100,7 +103,7 @@
 					
 						
 						<div class=" panel-heading"><!--shipping-->
-							<p>Tags:</p>
+							<p class="caps">unidades en renta</p>
 
 						<?
 							$sql_mostrar_etiquetas = mysql_query(" SELECT * FROM etiquetas");
@@ -115,7 +118,7 @@
 							 }
 						?>
 						<hr>
-							<img class="img-responsive" src="images/promociones/banner-chofer.jpg" alt="" />
+							
 						</div><!--/shipping-->
 					
 					</div>

@@ -21,7 +21,7 @@
 											<div class="productinfo text-center">
 
 												<img src="<? echo $row['imagen1']; ?>" alt="" />					
-												<p><? echo $row['marca']; ?></p>
+												<p class="upper"><? echo $row['marca']; ?></p>
 												<a href="auto-solo.php?n=<? echo $row['slug'] ?>" class="btn btn-default add-to-cart"><i class=""></i>Cotizar</a>
 
 											</div>

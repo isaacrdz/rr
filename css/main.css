@@ -144,6 +144,7 @@ a#scrollUp i{
   margin-right: 0;
   padding-bottom: 20px;
   padding-top: 20px;
+  
 }
 
 .header-middle .container .row .col-sm-4{
@@ -319,6 +320,7 @@ ul.sub-menu {
 
 .navbar-nav li ul.sub-menu li a{
   color: #fff;
+  font-size: 14px;
 }
 
 .navbar-nav li ul.sub-menu li a:hover{
@@ -2547,8 +2549,26 @@ h2.title {
 }
 
 
-.img-responsive
+.img-responsive-1
 {
-  max-width: 300px;
+  max-width: 800px;
   width: 100%;
+  
+}
+
+.upper
+{
+  text-transform: capitalize;
+   
+}
+
+
+.font-size-small
+{
+  font-size: 5px; 
+}
+
+.border-radius
+{
+  border-radius: 3px;
 }

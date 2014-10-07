@@ -89,11 +89,14 @@
 						<div class="single-widget">
 							<h2>Autos</h2>
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href=""> Chevrolet Matiz</a></li>
-								<li><a href=""> Chevrolet Matiz</a></li>
-								<li><a href=""> Chevrolet Matiz</a></li>
-								<li><a href=""> Chevrolet Matiz</a></li>
-								<li><a href=""></a></li>
+							<?
+		$sql = mysql_query("SELECT * FROM unidades WHERE tipo = 'auto' ORDER BY modelo LIMIT 4  ");
+		while ($row = mysql_fetch_array($sql)){
+?>
+								<li><a class="upper" href="auto-solo.php?n=<? echo $row['slug'] ?>"> <? echo $row['marca']." ".$row['modelo']." ".$row['anio']; ?></a></li>
+<? 
+	}
+?>								
 							</ul>
 						</div>
 					</div>
@@ -101,10 +104,14 @@
 						<div class="single-widget">
 							<h2>Camionetas <!-- Shop --></h2>
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="">-Chevrolet Matiz</a></li>
-								<li><a href="">-Chevrolet Matiz</a></li>
-								<li><a href="">-Chevrolet Matiz</a></li>
-								<li><a href=""></a></li>
+	<?
+		$sql = mysql_query("SELECT * FROM unidades WHERE tipo = 'camioneta' ORDER BY modelo LIMIT 4  ");
+		while ($row = mysql_fetch_array($sql)){
+?>
+								<li><a class="upper" href="auto-solo.php?n=<? echo $row['slug'] ?>"> <? echo $row['marca']." ".$row['modelo']." ".$row['anio']; ?></a></li>
+<? 
+	}
+?>								
 							</ul>
 						</div>
 					</div>
@@ -112,11 +119,14 @@
 						<div class="single-widget">
 							<h2>Camiones</h2>
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href=""> Chevrolet Matiz</a></li>
-								<li><a href=""> Chevrolet Matiz</a></li>
-								<li><a href=""> Chevrolet Matiz</a></li>
-								<li><a href=""> Chevrolet Matiz</a></li>
-								<li><a href=""> Chevrolet Matiz</a></li>
+<?
+		$sql = mysql_query("SELECT * FROM unidades WHERE tipo = 'camion' ORDER BY modelo LIMIT 4  ");
+		while ($row = mysql_fetch_array($sql)){
+?>
+								<li><a class="upper" href="auto-solo.php?n=<? echo $row['slug'] ?>"> <? echo $row['marca']." ".$row['modelo']." ".$row['anio']; ?></a></li>
+<? 
+	}
+?>								
 							</ul>
 						</div>
 					</div>
@@ -124,11 +134,14 @@
 						<div class="single-widget">
 							<h2>Estaquitas</h2>
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href=""> Chevrolet Matiz</a></li>
-								<li><a href="">Chevrolet Matiz </a></li>
-								<li><a href=""> Chevrolet Matiz</a></li>
-								<li><a href=""> Chevrolet Matiz</a></li>
-								<li><a href="">Chevrolet Matiz </a></li>
+							<?
+		$sql = mysql_query("SELECT * FROM unidades WHERE tipo = 'estacas' ORDER BY modelo LIMIT 4  ");
+		while ($row = mysql_fetch_array($sql)){
+?>
+								<li><a class="upper" href="auto-solo.php?n=<? echo $row['slug'] ?>"> <? echo $row['marca']." ".$row['modelo']." ".$row['anio']; ?></a></li>
+<? 
+	}
+?>								
 							</ul>
 						</div>
 					</div>
